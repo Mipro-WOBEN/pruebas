@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    margin-top: 20px;
+}
+
+.horizontal{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: bisque;
+}
+
+.horizontal li:hover{
+    background-color: brown;
+}
+
+.horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.horizontal li:hover .vertical{
+    display: block;
+}
+
+.vertical{
+    display: none;
+    position: absolute;
+    list-style: none;
+}
+
+.vertical > li > a{
+    display: block;
+    padding: 15px 15px 15px 15px;
+    background-color: aquamarine;
+    text-decoration: none;
+}
+
+.vertical li a:hover{
+    background-color: #333;
+    color: aliceblue;
+}
